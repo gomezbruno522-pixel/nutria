@@ -1,0 +1,14 @@
+NUTRIA PWA - paquete inicial
+
+Contenido:
+- index.html: aplicación web actualizada con balance energético ajustado.
+- manifest.json: identidad e instalación como aplicación.
+- sw.js: caché para uso sin conexión después de la primera carga.
+- icon.svg / icon-192.png / icon-512.png: iconos.
+
+IMPORTANTE:
+Para instalarla como PWA, estos archivos deben publicarse juntos en un sitio HTTPS.
+No abrir index.html desde el gestor de archivos (file://): el service worker y la instalación PWA requieren HTTPS o localhost.
+
+Los datos del diario se guardan en el almacenamiento local del navegador mediante la clave nutria-v1. No borres los datos del sitio ni desinstales la app sin exportar una copia de seguridad.
+El sensor nativo de pasos no está incluido en esta PWA.
